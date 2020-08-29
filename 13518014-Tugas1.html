@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+
+<meta charset="UTF-8">
+<meta name="description" content="Profile Page">
+<meta name="author" content="Ignatius David Partogi">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+.button {
+  background-color: #FF0000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.header {
+  color: white;
+  font-family: century gothic;
+}
+.text {
+  color: white;
+  font-family: courier;
+}
+</style>
+
+<body style="background-color:black;">
+<h1 class="header">Hi there!</h2>
+<p class="text">What do you want to know about me?</p>
+<button class="button header" onclick="myName()">My Name</button> <br>
+<p id="name" class="text"></p> <br>
+<button class="button header" onclick="myAge()">My Age</button> <br>
+<p id="age" class="text"></p> <br>
+<button class="button header" onclick="myBirth()">My Birth Date</button> <br>
+<p id="birth" class="text"></p> <br>
+<button class="button header" onclick="myHobby()">My Hobby</button> <br>
+<p id="hobby" class="text"></p> <br>
+<button class="button header" onclick="myPhoto()">How I Look</button> <br>
+<p id="photo" class="text"></p> <br>
+<button class="button header" onclick="myCollege()">Where I Study</button> <br>
+<p id="college" class="text"></p> <br>
+</body>
+
+<script>
+function myName() { 
+  document.getElementById("name").innerHTML = "My name is Ignatius David Partogi.";
+}
+function myAge() { 
+  document.getElementById("age").innerHTML = "I am 20 years old.";
+}
+function myBirth() { 
+  document.getElementById("birth").innerHTML = "I was born on April 6, 2000.";
+}
+function myHobby() { 
+  document.getElementById("hobby").innerHTML = "I love tech, more specifically computer-related tech. I like to do many things on my PC such as playing games and overclocking/undervolting it.";
+}
+function myPhoto() { 
+  document.getElementById("photo").innerHTML = "<img src='https://raw.githubusercontent.com/13518014Ignatius/IF3110_Tugas1/master/IMG_20180901_182252.jpg' alt='Failed to load picture' width='300' height='400' />";
+}
+function myCollege() { 
+  document.getElementById("college").innerHTML = "I am currently studying in Bandung Institute of Technology.";
+}
+</script>
+</html>
